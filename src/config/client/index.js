@@ -1,0 +1,1 @@
+export const IS_BROWSER = true;

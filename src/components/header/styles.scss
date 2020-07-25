@@ -1,0 +1,65 @@
+.header{      
+  max-height:100px;  
+  background-color: rgb(0, 132, 254);
+}
+
+.headerContainer{
+  width:90%;
+  margin:auto;
+  overflow:hidden;
+}
+
+.navOptions{
+  float:right;    
+}
+
+.navs{  
+  padding:0;
+  float: left;
+  margin-right: 3%;
+}
+
+.navOption{  
+  display:inline;    
+}
+
+.login{  
+  color:white;
+  text-decoration:none;
+  text-transform: capitalize;
+  font-size:20px;
+  font-weight:bold;
+  float: left;    
+  padding-right: 100px; 
+  margin-top: 18px;    
+}
+
+.freeTrial{
+  float: right;  
+  width: 300px;
+  height: 60px;  
+  background-color: rgb(57, 57, 57);    
+  margin-top: -35px;
+}
+
+.freeTrialText{
+  color:rgb(213, 224, 240);
+  font-size: 26px;
+  cursor: pointer;  
+}
+
+.demoStreaming{  
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-left: 5%;
+  float: left;
+  cursor: pointer; 
+}
+.demoStreaming a{
+  text-decoration:none;
+  color: rgb(240, 246, 248);
+}
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preload" as="font" href="/media/fonts/mark-simonson-proxima-nova.otf" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/media/fonts/mark-simonson-proxima-nova-bold.otf" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/media/fonts/mark-simonson-proxima-nova-semibold.otf" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/media/fonts/apostrophic-labs-komika-title.ttf" type="font/ttf" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="shortcut icon" type="image/png" href="/media/images/clapperboard.png" />
+    <%= htmlWebpackPlugin
+        .files
+        .css
+        .filter(file => file.includes("client.styles"))
+        .map(cssFile => '<link href="' + cssFile + '" rel="stylesheet" type="text/css">')
+        .join('')
+    %>
+</head>
+<body>
+    <div id="root"><div id="app"/></div>
+    <script>window.__PRELOADED_STATE__={}</script>
+    <%= htmlWebpackPlugin
+        .files
+        .js
+        .filter(file => file.includes("client."))
+        .map(jsFile => '<script src="' + jsFile + '"></script>')
+        .join('')
+    %>
+</body>

@@ -1,0 +1,41 @@
+.transitionGroupContainer {
+    display: flex;
+    flex: 1;
+    background-color: #ffffff;
+    .transitionGroup {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.routerWrapper {
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+  
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+    transition-delay: 300ms;
+}
+
+.fade-exit {
+    opacity: 1;
+    position: absolute;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    position: absolute;
+    top: 0px;
+}
