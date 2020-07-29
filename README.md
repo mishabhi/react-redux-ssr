@@ -14,4 +14,6 @@ npm run prod
 # Key Points:
   1. To optimize performance, separate Javascript bundles are generated for node dependencies and application code
   2. For SEO performance, the html page generation can be optimized by caching the pages on the server (typically on NGINX)
+  3. HTML template is being generated through webpack and the same template is being used to generate server side rendered page
+  4. PM2 server is being used to host the backend code.
 
